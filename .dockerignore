@@ -1,0 +1,47 @@
+# Version control
+.git
+.gitignore
+
+# Dependencies
+node_modules
+.pnpm-store
+
+# Development files
+*.log
+*.md
+.env*
+.vscode
+.idea
+coverage
+test
+__tests__
+*.test.*
+*.spec.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build
+dist
+*.nyc_output
+tsconfig.tsbuildinfo
+
+# VCS
+.github
+
+# Development configs
+.editorconfig
+.eslint*
+.nvmrc
+.prettierrc.cjs
+jest.config.cjs
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*
+
+# Documentation
+!README.md
