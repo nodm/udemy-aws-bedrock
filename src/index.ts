@@ -1,9 +1,9 @@
-import { getEnvVariable, registerSignalHandlers } from './utils/index.ts';
+import { getModelInfo, listFoundationModels } from './01-intro/index.ts';
+import { registerSignalHandlers } from './utils/index.ts';
 
-const defaultName = getEnvVariable('NAME', false);
-
-export default async function run(name = defaultName): Promise<void> {
-  console.log(`Hello, ${name}!`);
+export default async function run(): Promise<void> {
+  console.log('Foundation Models:', await listFoundationModels());
+  console.log('Model Info:', await getModelInfo('anthropic.claude-opus-4-20250514-v1:0'));
 }
 
 registerSignalHandlers();
